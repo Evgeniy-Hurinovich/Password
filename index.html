@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"><!-- Primary Meta Tags -->
+    <title>For_EPAM</title>
+    <meta name="title" content="For_EPAM">
+    <meta name="description" content="It's my first task"><!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://metatags.io/">
+    <meta property="og:title" content="For_EPAM">
+    <meta property="og:description" content="It's my first task">
+    <meta property="og:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://metatags.io/">
+    <meta property="twitter:title" content="For_EPAM">
+    <meta property="twitter:description" content="It's my first task">
+    <meta property="twitter:image"
+        content="https://metatags.io/assets/meta-tags-16a33a6a8531e519cc0936fbba0ad904e52d35f34a46c97a2c9f6f7dd7d336f2.png">
+    <!-- Favicon  -->
+    <link rel="apple-touch-icon" sizes="57x57" href="icons/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="icons/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="icons/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="icons/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="icons/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="icons/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="icons/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="icons/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="icons/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="icons/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="icons/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="icons/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="icons/favicon/favicon-16x16.png">
+    <link rel="manifest" href="icons/favicon/manifest.json">
+    <meta name="msapplication-TileColor" content="#2c0069">
+    <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#2c0069">
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+    <div class="container">
+        <header class="header"><a href="https://evgeniy-hurinovich.github.io/" class="header__logo"><img
+                    src="img/logo.png" alt="logo"></a>
+            <div class="header__official">by Gurinovich Evheniy <span>practical task for EPAM</span></div>
+            <div class="header__contacts"><a href="tel:+375293779607" class="header__phone">+375(29) 3779607</a> <button
+                    class="button consultation" data-modal>authorization</button></div>
+        </header>
+    </div>
+    <section class="contacts">
+        <div class="container">
+            <div class="contacts__wrapper">
+                <div class="contacts__photo"><img src="img/main_photo.jpg" alt="photo"></div>
+                <div class="contacts__descr">
+                    <h2 class="title title_fz16 contacts__title">Форма задания.<br>(вводимые данные отправляются в
+                        формате JSON, а также организована валидация данных посредством авторизации)</h2>
+                    <div class="title title_fz36 contacts__subtitle">Свяжитесь со мной</div>
+                    <div class="title title_fz14 cocontacts__text">любым удобным для Вас способом:</div>
+                    <div class="contacts__social"><a href="https://www.facebook.com/evgeniy.gurinovich.1"
+                            class="contacts__link"><img src="icons/social/FB.png" alt="facebook"> </a><a
+                            href="https://tlgg.ru/@gurinovichEvgen" class="contacts__link"><img
+                                src="icons/social/telegram.png" alt="telegram"> </a><a
+                            href="https://www.instagram.com/evgeniygurinovich/" class="contacts__link"><img
+                                src="icons/social/INS.png" alt="instagram"></a></div>
+                    <div class="title title_fz14 contacts__text">Регистрация на ресурсе</div>
+                    <form id="contacts-form" action="#" class="contacts__form">
+                        <div class="contacts__input"><input required placeholder="LOGIN" name="name" type="text" minlenght="2" id="name"> <label
+                                for="name">Ваш логин</label></div>
+                        <div class="contacts__input"><input required required placeholder="PASSWORD" name="password" type="password" id="email" inputmode="numeric" minlength="4" maxlength="8" size="8" pattern="[0-9]{4,8}"
+                            title="Enter an ID consisting of 4-8 decimal digits (0-9)"> <label for="password">Введите пароль</label></div>
+                        <div class="contacts__triggers"><button class="contacts__btn btn">Подтвердить<input
+                                    type="reset"></button>
+                            <div class="contacts__policy"><input required type="checkbox"> <span>Я согласен(а) <a
+                                        href="/policy.html">с политикой конфиденциальности</a></span></div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div class="modal">
+        <div class="modal__dialog">
+            <div class="modal__content">
+                <form id="contacts-form2" action="#">
+                    <div class="modal__close" data-close>&times;</div>
+                    <div class="modal__title">для успешной авторизации на ресурсе, введите Ваш логин и пароль</div>
+                    <input required placeholder="LOGIN" name="name" type="text" class="modal__input" id="login"> <input
+                        required placeholder="PASSWORD" name="password" type="password" class="modal__input" id="password"
+                        inputmode="numeric" minlength="4" maxlength="8" size="8" pattern="[0-9]{4,8}"
+                        title="Enter an ID consisting of 4-8 decimal digits (0-9)"> <button
+                        class="btn btn_dark btn_min"  id="confirm">CONFIRM</button>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
